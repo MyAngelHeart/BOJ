@@ -4,14 +4,14 @@
 
 int main()
 {
-    int numCase = 0;
-    float scoreAvg = 0;
-    int countUpperAvg = 0;
+    int numCase = 0; 
     std::cin >> numCase;
 
     for (int n = 0; n < numCase; n++)
     {
         int numStudent = 0;
+        int countUpperAvg = 0;
+        float scoreAvg = 0;
         std::cin >> numStudent;
 
         int *subjectScore = new int[numStudent]();
@@ -21,6 +21,7 @@ int main()
             scoreAvg += subjectScore[i];
         }
         scoreAvg /= (float)numStudent;
+        
         for (int i = 0; i < numStudent; i++)
         {
             if (subjectScore[i] > scoreAvg)
@@ -32,7 +33,7 @@ int main()
 
         std::cout.precision(3);
         std::cout << std::fixed;
-        std::cout << avgUpperAvg;
+        std::cout << avgUpperAvg << "%" << std::endl;
 
         delete subjectScore;
     }
