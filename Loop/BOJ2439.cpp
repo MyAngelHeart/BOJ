@@ -3,10 +3,18 @@ int main()
 {
     int n = 0;
     std::cin >> n;
-    
-    for(int i = 1; i<10; i++)
+
+    for(int i = 1; i <= n; i++)
     {
-        std::cout << n << " * " << i << " = " << n*i << std::endl;
+        for(int j = 1; j <= n-i; j++)
+        {
+            std::cout << " ";
+        }
+        for(int j = 1; j <= i; j++)
+        {
+            std::cout << "*";
+        }
+        std::cout << "\n";        
     }
     return 0;
 }
