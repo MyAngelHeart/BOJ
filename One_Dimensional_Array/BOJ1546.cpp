@@ -30,7 +30,7 @@ int main()
     scoreAvg /= (float)numSubject;
     std::cout << scoreAvg;
 
-    delete subjectScore; // 동적할당시 삭제 필수 메모리 누수방지
+    delete[] subjectScore; // 동적할당시 삭제 필수 메모리 누수방지
     return 0;
 }
 

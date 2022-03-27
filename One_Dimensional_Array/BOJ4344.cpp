@@ -35,7 +35,7 @@ int main()
         std::cout << std::fixed;
         std::cout << avgUpperAvg << "%" << std::endl;
 
-        delete subjectScore;
+        delete[] subjectScore;
     }
     return 0;
 }
