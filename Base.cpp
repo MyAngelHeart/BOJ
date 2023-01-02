@@ -8,11 +8,15 @@ int main()
 
 // std::cin >> a; //input
 // std::cout << "a"; //output
-// build shortcut =  ctrl + alt + c
-// execution shortcut = ctrl + alt + v
+
+// In Window
+// Terminal -> Run Build Task
+// in Terminal ./(Filename)
+// example : BOJ2292 in BasicMath
+// ./BasicMath/BOJ2292.exe
 
 // In Mac
-// Terminal -> Run Build Execution
+// Terminal -> Run Build Task
 // in Terminal ./(Filename)
-// example : BOJ2922 in BasicMath
+// example : BOJ2292 in BasicMath
 // ./BasicMath/BOJ2292
