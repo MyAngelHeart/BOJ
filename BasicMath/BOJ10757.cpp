@@ -14,8 +14,8 @@ int main()
     for(int i = 0; i<str1len && i<str2len; i++)
     {
         std::cout << "t";
-        int carry = 0;
-        int sum = 0;
+        char carry = 0;
+        char sum = 0;
 
         sum = (int)str1[i]-48 + (int)str2[i]-48 + arr[i];
 
